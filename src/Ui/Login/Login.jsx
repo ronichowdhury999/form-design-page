@@ -11,11 +11,11 @@ const Login = () => {
             <form onSubmit={handelSubmit} className="form-container border px-6 pt-4  bg-opacity-100 shadow-lg rounded-lg  mt-8  bg-white">
                 <div className="mb-4">
                     <h4>Email</h4>
-                    <input className="w-full mt-2 py-3 px-4 rounded-lg border border-gray-200 " type="email" name="email" id="" placeholder="Email address or phone number" />
+                    <input className="w-full mt-2 py-3 px-4 rounded-lg border text-black border-gray-200 " type="email" name="email" id="" placeholder="Email address or phone number" />
                 </div>
                 <div>
                     <h4>Password</h4>
-                    <input className="w-full mt-2 py-3 px-4 rounded-lg border border-gray-200 " type="password" name="password" id="" placeholder="Password" />
+                    <input className="w-full mt-2 py-3 px-4 rounded-lg border text-black border-gray-200 " type="password" name="password" id="" placeholder="Password" />
                 </div>
                 <div className="text-center mt-4 py-2 text-white font-bold text-xl rounded-lg bg-blue-600 w-full cursor-pointer">
                     <button>Submit</button>
@@ -29,7 +29,7 @@ const Login = () => {
                 </div>
             </form>
             <div className="mt-4 text-center text-sm text-gray-600 font-serif">
-                <p>Create by Roni chowdhury <span className="border border-gray-500 border-r-1  mx-2" /> <a target="black" href="https://www.facebook.com/i.mdroni"><span className="underline text-blue-500">Profile visit</span></a></p>
+                <p className='text-white'>Create by Roni chowdhury <span className="border border-gray-500 border-r-1  mx-2" /> <a target="black" href="https://www.facebook.com/i.mdroni"><span className="underline text-blue-500">Profile visit</span></a></p>
             </div>
         </div>
        </div>
