@@ -10,7 +10,7 @@ const Login = () => {
                 <h1 className="text-4xl "><span className="font-bold text-blue-500">f</span>acebook</h1>
                 {/* <FaFacebook className="text-blue-500 text-4xl" /> */}
             </div>
-            <form onSubmit={handelSubmit} className="form-container border px-6 pt-4  bg-opacity-100 shadow-lg rounded-lg  mt-8 ">
+            <form onSubmit={handelSubmit} className="form-container border px-6 pt-4  bg-opacity-100 shadow-lg rounded-lg  mt-8  bg-white">
                 <div className="mb-4">
                     <h4>Email</h4>
                     <input className="w-full mt-2 py-3 px-4 rounded-lg border border-gray-200 " type="email" name="email" id="" placeholder="Email address or phone number" />
