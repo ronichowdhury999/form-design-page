@@ -5,11 +5,9 @@ const Login = () => {
         e.preventDefault();
     }
     return (
-        <div className=" mt-4 w-[500px] h-screen mx-auto px-4 ">
-            <div className="flex items-center gap-4 justify-center">
-                <h1 className="text-4xl "><span className="font-bold text-blue-500">f</span>acebook</h1>
-                {/* <FaFacebook className="text-blue-500 text-4xl" /> */}
-            </div>
+       <div className='items-cente justify-center flex h-[100vh]'>
+         <div className="w-[500px] h-screen mx-auto px-4 py-4 ">
+                <h1 className="text-4xl text-center"><span className="font-bold text-blue-500">f</span>acebook</h1>
             <form onSubmit={handelSubmit} className="form-container border px-6 pt-4  bg-opacity-100 shadow-lg rounded-lg  mt-8  bg-white">
                 <div className="mb-4">
                     <h4>Email</h4>
@@ -34,6 +32,7 @@ const Login = () => {
                 <p>Create by Roni chowdhury <span className="border border-gray-500 border-r-1  mx-2" /> <a target="black" href="https://www.facebook.com/i.mdroni"><span className="underline text-blue-500">Profile visit</span></a></p>
             </div>
         </div>
+       </div>
     )
 }
 

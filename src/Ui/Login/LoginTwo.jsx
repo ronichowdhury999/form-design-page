@@ -6,7 +6,6 @@ const LoginTwo = () => {
     }
     return (
         <div className='items-cente justify-center flex h-[100vh]' >
-            
             <div className=" w-[500px] h-screen mx-auto px-4 py-4 ">
                 <h1 className="text-4xl text-center "><span className="font-bold text-blue-500">f</span>acebook</h1>
                 <form onSubmit={handelSubmit} className="form-container border px-6 pt-4  shadow-lg rounded-lg  mt-8  backdrop-filter backdrop-blur-sm bg-opacity-30">
