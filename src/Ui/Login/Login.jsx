@@ -1,6 +1,7 @@
 // import { FaFacebook } from "react-icons/fa6";
 import { useState } from 'react';
 import './Login.css'
+import { Navigate, } from 'react-router-dom';
 const Login = () => {
 
     const [email, setEmail] = useState('')
@@ -12,18 +13,30 @@ const Login = () => {
 
         if (email || password) {
             setShow(email, password)
+
         }
         else {
             return alert('Please enter your email or password')
+        }
+        if(show){
+            <Navigate to={'/home'}/>
+        }else{
+            <Navigate to={'/'}/>
         }
     }
     console.log('show', show);
     return (
         <div className='items-cente justify-center flex h-[100vh]'>
-            <div className="w-[500px] h-screen mx-auto px-4 py-4 ">
+            <div className="w-[500px] h-screen mx-auto px-4 py-2 ">
                 <h1 className="text-4xl text-center"><span className="font-bold text-blue-500">f</span>acebook</h1>
-                <form onSubmit={handelSubmit} className="form-container border px-6 pt-4  bg-opacity-100 shadow-lg rounded-lg  mt-8  bg-white text-black">
-                    <p className='text-black text-center'>{show}</p>
+                <form onSubmit={handelSubmit} className="form-container border px-6 pt-4  bg-opacity-100 shadow-lg rounded-lg  mt-4  bg-white text-black">
+
+                    <div className='flex items-center justify-center gap-4'>
+                        <p className='text-black text-center'>{show}</p>
+                        <div>
+                            {show && <img className='w-[20px]' src='https://cdn-icons-png.flaticon.com/128/17707/17707926.png'></img>}
+                        </div>
+                    </div>
                     <div className="mb-4">
                         <h4 className=''>Email</h4>
                         <input onChange={e => (setEmail(e.target.value))} className="w-full mt-2 py-3 px-4 rounded-lg border text-black border-gray-200 " type="email" name="email" placeholder="Email address or phone number" />

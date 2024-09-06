@@ -2,7 +2,7 @@ const Home = () => {
     return (
         <div>
             <div className="hero bg-base-200 min-h-screen">
-                <img className="w-full h-[100vh]" src="https://i.ibb.co.com/jMkBZP0/flat-lay-desktop-with-laptop-cup-coffee.jpg" alt="" />
+                <img className="w-full h-[100vh]" src="https://i.ibb.co.com/jMkBZP0/flat-lay-desktop-with-laptop-cup-coffee.jpg" alt="homeImg" />
                 <div className="hero-content text-center">
                     <div className="max-w-md">
                         <h1 className="text-5xl text-white font-bold">Login</h1>
