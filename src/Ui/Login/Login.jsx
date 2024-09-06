@@ -1,7 +1,6 @@
 // import { FaFacebook } from "react-icons/fa6";
 import { useState } from 'react';
 import './Login.css'
-import { Navigate, } from 'react-router-dom';
 const Login = () => {
 
     const [email, setEmail] = useState('')
@@ -17,11 +16,6 @@ const Login = () => {
         }
         else {
             return alert('Please enter your email or password')
-        }
-        if(show){
-            <Navigate to={'/home'}/>
-        }else{
-            <Navigate to={'/'}/>
         }
     }
     console.log('show', show);
