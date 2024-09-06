@@ -1,10 +1,10 @@
-import Login from './Ui/Login/Login'
+// import Login from './Ui/Login/Login'
 
 function App() {
 
   return (
-    <div>
-      <Login />
+    <div className='parent'>
+      {/* <Login /> */}
     </div>
   )
 }

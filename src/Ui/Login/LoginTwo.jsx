@@ -1,11 +1,12 @@
-// import { FaFacebook } from "react-icons/fa6";
-import './Login.css'
-const Login = () => {
+
+import './LoginTwo.css'
+const LoginTwo = () => {
     const handelSubmit = e => {
         e.preventDefault();
     }
     return (
-        <div className=" mt-4 w-[500px] h-screen mx-auto px-4 ">
+        <div  className='parent  text-white'>
+            <div className="pt-4 w-[500px] h-screen mx-auto px-4 ">
             <div className="flex items-center gap-4 justify-center">
                 <h1 className="text-4xl "><span className="font-bold text-blue-500">f</span>acebook</h1>
                 {/* <FaFacebook className="text-blue-500 text-4xl" /> */}
@@ -30,11 +31,12 @@ const Login = () => {
                     <button className="py-3 px-4 bg-green-600 rounded-lg text-white font-bold">Create new account</button>
                 </div>
             </form>
-            <div className="mt-4 text-center text-sm text-gray-600 font-serif">
+            <div className="mt-4 text-center text-sm font-serif">
                 <p>Create by Roni chowdhury <span className="border border-gray-500 border-r-1  mx-2" /> <a target="black" href="https://www.facebook.com/i.mdroni"><span className="underline text-blue-500">Profile visit</span></a></p>
             </div>
+        </div>
         </div>
     )
 }
 
-export default Login
+export default LoginTwo
