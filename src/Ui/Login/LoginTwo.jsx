@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom';
 import './LoginTwo.css'
 const LoginTwo = () => {
     const handelSubmit = e => {
@@ -10,22 +11,32 @@ const LoginTwo = () => {
                 <h1 className="text-4xl text-center text-blue-500 md:text-white "><span className="font-bold text-blue-500">f</span>acebook</h1>
                 <form onSubmit={handelSubmit} className="form-container border px-6 pt-4  shadow-lg rounded-lg  mt-8  backdrop-filter backdrop-blur-sm bg-opacity-30">
                     <div className="mb-4">
+                        <h4>Name</h4>
+
+                        <input className="w-full mt-2 py-3 px-4  border-b-2 bg-transparent  focus:outline-none focus:ring- focus:text-white focus:border-blue-600 placeholder:text-white" 
+                        type="name" name="name" id="em" placeholder="Enter your full name :" />
+                    </div>
+                    <div className="mb-4">
                         <h4>Email</h4>
 
-                        <input className="w-full mt-2 py-3 px-4  border-b-2 bg-transparent  focus:outline-none focus:ring- focus:text-white focus:border-blue-600 placeholder:text-white" type="email" name="email" id="em" placeholder="Email address or phone number" />
+                        <input className="w-full mt-2 py-3 px-4  border-b-2 bg-transparent  focus:outline-none focus:ring- focus:text-white focus:border-blue-600 placeholder:text-white" type="email" name="email" id="em" placeholder="Email address or phone number :" />
                     </div>
                     <div>
                         <h4>Password</h4>
-                        <input className="w-full mt-2 py-3 px-4 border-b-2 focus:outline-0 focus:text-white focus:border-blue-600 bg-transparent placeholder:text-white " type="password" name="password" id="ps" placeholder="Password" />
+                        <input className="w-full mt-2 py-3 px-4 border-b-2 focus:outline-0 focus:text-white focus:border-blue-600 bg-transparent placeholder:text-white " type="password" name="password" id="ps" placeholder="Password :" />
                     </div>
-                    <div className="text-center mt-4 py-2 text-white font-bold text-xl rounded-lg bg-blue-600 w-full cursor-pointer">
+                    <div className="text-center mt-3 py-2 text-white font-bold text-xl rounded-lg bg-blue-600 w-full cursor-pointer">
                         <button>Submit</button>
                     </div>
-                    <div className="text-center mt-4">
-                        <button className="text-blue-600 cursor-pointer">Forgotten password?</button>
+                    <div className='flex items-center justify-center gap-4'>
+                        <div className="text-center mt-4">
+                            <button className="text-blue-600 cursor-pointer">Forgotten password?</button>
+                        </div>
+                        <div className="text-center mt-4">
+                            <Link to={'/'} className="text-white cursor-pointer underline hover:text-blue-500">Login</Link>
+                        </div>
                     </div>
-                    <div className="border border-b-1 mt-4" />
-                    <div className="my-6 text-center ">
+                    <div className="my-4 text-center ">
                         <button className="py-3 px-4 bg-green-600 rounded-lg text-white font-bold">Create new account</button>
                     </div>
                 </form>

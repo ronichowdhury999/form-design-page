@@ -1,6 +1,7 @@
 // import { FaFacebook } from "react-icons/fa6";
 import { useState } from 'react';
 import './Login.css'
+import { Link } from 'react-router-dom';
 const Login = () => {
 
     const [email, setEmail] = useState('')
@@ -42,8 +43,14 @@ const Login = () => {
                     <div className="text-center mt-4 py-2 text-white font-bold text-xl rounded-lg bg-blue-600 w-full cursor-pointer">
                         <button>Submit</button>
                     </div>
-                    <div className="text-center mt-4">
-                        <button className="text-blue-600 cursor-pointer">Forgotten password?</button>
+                    <div className='flex items-center justify-center gap-4'>
+                        <div className="text-center mt-4">
+                            <button className="text-blue-600 cursor-pointer">Forgotten password?</button>
+                        </div>
+                        <span className='border border-b-2' />
+                        <div className="text-center mt-4">
+                            <Link to={'/loginTwo'} className="text-black hover:text-blue-400 cursor-pointer">Registration</Link>
+                        </div>
                     </div>
                     <div className="border border-b-1 mt-4" />
                     <div className="my-6 text-center ">
